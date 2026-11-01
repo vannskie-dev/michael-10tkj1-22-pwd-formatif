@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Badge</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header ID #top */
+        header#top {
+            background-color: #1e293b;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+        /* Class .card dengan position relative */
+        .card {
+            position: relative;
+            width: 360px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 30px auto;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        /* Descendant .card .badge dengan position absolute */
+        .card .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ef4444;
+            color: white;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            display: block;
+            
+        }
+
+        .card h3 {
+            color: #333333;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #666666;
+        }
+
+        .card a {
+            font-size: 15px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* Paragraf main agar sejajar dengan kartu */
+        main p {
+            width: 360px;
+            margin: 15px auto;
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.5;
+        }
+
+        /* Class .back-to-top dengan position fixed */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            z-index: 99;
+        }
+
+        .back-to-top:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="top">
+        <h2>Proyek Saya</h2>
+    </header>
+
+    <main>
+        <div class="card">
+            <span class="badge">BARU</span>
+            <img src="/assets/images/projek.jpg" alt="gambar proyek">
+            <h3>Website Toko Online</h3>
+            <p>Proyek latihan membuat halaman toko sederhana. Dibuat memakai HTML dan CSS.</p>
+            <a href="">Lihat Proyek</a>
+            
+            <footer>
+                <a href="">Kembali ke Beranda</a>
+            </footer>
+        </div>
+
+        <!-- Paragraf pengisi agar halaman bisa digulir ke bawah -->
+        <p>Paragraf pengisi supaya halaman bisa digulir ke bawah untuk mengetes tombol kembali ke atas.</p>
+        <p>Paragraf pengisi kedua untuk menambah tinggi halaman.</p>
+        <p>Paragraf pengisi ketiga agar posisi fixed tombol terlihat jelas saat discroll.</p>
+        <p>Paragraf pengisi supaya halaman bisa digulir ke bawah untuk mengetes tombol kembali ke atas.</p>
+        <p>Paragraf pengisi kedua untuk menambah tinggi halaman.</p>
+        <p>Paragraf pengisi ketiga agar posisi fixed tombol terlihat jelas saat discroll.</p>
+        <p>Paragraf pengisi supaya halaman bisa digulir ke bawah untuk mengetes tombol kembali ke atas.</p>
+        <p>Paragraf pengisi kedua untuk menambah tinggi halaman.</p>
+        <p>Paragraf pengisi ketiga agar posisi fixed tombol terlihat jelas saat discroll.</p>
+        <p>Paragraf pengisi supaya halaman bisa digulir ke bawah untuk mengetes tombol kembali ke atas.</p>
+        <p>Paragraf pengisi kedua untuk menambah tinggi halaman.</p>
+        <p>Paragraf pengisi ketiga agar posisi fixed tombol terlihat jelas saat discroll.</p>
+    </main>
+
+    <!-- Tombol Ke Atas -->
+    <a href="#top" class="back-to-top">Ke Atas</a>
+
+</body>
+</html>
