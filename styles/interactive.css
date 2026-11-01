@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    padding: 40px;
+}
+
+/* 2. .menu a (Descendant): transition ditulis pada keadaan biasa (bukan di :hover) */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.menu a {
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* 3. .menu a:hover (Pseudo-class): warna tulisan berubah */
+.menu a:hover {
+    color: #2563eb;
+}
+
+/* 7. a:focus (Tag dan Pseudo-class): ada garis (outline) saat tautan dipilih dengan tombol Tab */
+a:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 3px;
+}
+
+/* 4. .btn (Class): dipakai kedua tombol (display inline-block, padding, sudut membulat, tanpa garis bawah) */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 5. .btn-grow & .btn-grow:hover (Tombol membesar 5%) */
+.btn-grow {
+    background-color: #2563eb;
+    transition: transform 0.3s ease-out;
+}
+
+.btn-grow:hover {
+    transform: scale(1.05);
+}
+
+/* 6. .btn-darken & .btn-darken:hover (Warna latar menjadi lebih gelap) */
+.btn-darken {
+    background-color: #f97316;
+    transition: background-color 0.4s linear;
+}
+
+.btn-darken:hover {
+    background-color: #c2410c;
+}
+
+/* Footer & Tautan Kembali */
+footer {
+    margin-top: 50px;
+}
+
+footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
