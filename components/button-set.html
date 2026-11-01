@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Set</title>
+    <style>
+        /* body (Tag): latar berwarna terang dan font Arial dengan font cadangan sans-serif */
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        /* h2 (Tag): warna gelap dan ukuran 20 px */
+        h2 {
+            color: #222222;
+            font-size: 20px;
+        }
+
+        /* 4. .btn (Class): dipakai semua tombol */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* 5. .button-group .btn (Descendant): jarak (margin) kanan 10 px dan bawah 10 px antar tombol */
+        .button-group .btn {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* 6. Warna latar belakang berbeda untuk masing-masing tombol (Menggunakan nama warna, hex, rgb, dan rgba) */
+        .btn-primary {
+            background-color: blue; /* Nama warna */
+            color: #ffffff;
+        }
+
+        .btn-secondary {
+            background-color: #28a745; /* Hex */
+            color: #ffffff;
+        }
+
+        .btn-outline {
+            background-color: rgb(255, 255, 255); /* RGB (Latar putih dengan garis tepi 2px) */
+            border: 2px solid #333333;
+            color: #333333;
+        }
+
+        .btn-send {
+            background-color: rgba(255, 87, 34, 0.9); /* RGBA */
+            color: #ffffff;
+        }
+
+        /* 7. .btn-secondary dan .btn-outline (Grouping): berbagi satu aturan,  warna tulisan gelap */
+        .btn-secondary, .btn-outline {
+            color: #222222; 
+        }
+
+        /* 8. Saat kursor di atas tombol (:hover), warna tombol berubah */
+        .btn-primary:hover {
+            background-color: darkblue;
+        }
+
+        .btn-secondary:hover {
+            background-color: #218838;
+        }
+
+        .btn-outline:hover {
+            background-color: #e2e2e2;
+        }
+
+        .btn-send:hover {
+            background-color: rgba(230, 74, 25, 1);
+        }
+
+        /* Styling tambahan untuk footer */
+        footer {
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h2>Judul Bagian Proyek</h2>
+        
+        <div class="button-group">
+            <a href=" " class="btn btn-primary">Lihat Proyek</a>
+            <a href=" " class="btn btn-secondary">Unduh CV</a>
+            <a href=" " class="btn btn-outline">Hubungi Saya</a>
+            <a href=" " class="btn btn-send">Kirim Pesan</a>
+        </div>
+    </main>
+
+    <footer>
+        <a href=" ">Kembali ke Beranda</a>
+    </footer>
+
+</body>
+</html>
