@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Proyek</title>
+    <style>
+        /* Selector universal */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 320px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 30px auto;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            display: block;
+        }
+
+        .card h3 {
+            color: #333333;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #666666;
+        }
+
+        .card a {
+            font-size: 15px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .card a:hover{
+            font-size: 15px;
+            color: blue;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+<!-- 
+    Hitungan lebar kartu jika box-sizing tidak diatur:
+    Width: 320px
+    Padding kiri dan kanan: 20px + 20px = 40px
+    Border kiri dan kanan: 2px + 2px = 4px
+    Total lebar fisik = 320 + 40 + 4 = 364px
+-->
+    <main>
+        <div class="card">
+            <img src="/assets/images/projek.jpg" alt="gambar proyek">
+            <h3>Website Toko Online</h3>
+            <p>Proyek latihan membuat halaman toko sederhana. Dibuat memakai HTML dan CSS.</p>
+            <a href="#">Lihat Proyek</a>
+            
+            <footer>
+                <a href="#">Kembali ke Beranda</a>
+            </footer>
+        </div>
+    </main>
+
+</body>
+</html>
