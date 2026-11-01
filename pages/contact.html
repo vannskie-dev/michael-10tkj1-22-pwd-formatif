@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Kontak</title>
+    <style>
+        /* 1. Selector universal */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 2. Tag body */
+        body {
+            margin: 0;
+            background-color: #f8fafc;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 3. Section #contact */
+        #contact {
+            padding: 40px 20px;
+        }
+
+        /* 4. Class .contact-form */
+        .contact-form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 24px;
+            border: 1px solid #cbd5e1;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+
+        /* 5. Descendant .contact-form h2 */
+        .contact-form h2 {
+            text-align: center;
+            color: #1e293b;
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+
+        /* 6. Class .form-group */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        /* 7. Descendant .form-group label */
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #334155;
+            font-size: 14px;
+        }
+
+        /* 8. Grouping selector untuk input dan textarea */
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        /* 9. Grouping selector dengan pseudo-class :focus */
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #2563eb;
+            background-color: #f0f0f0; 
+        }
+
+        /* 10. Class .btn-submit */
+        .btn-submit {
+            width: 100%;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Pseudo-class hover untuk tombol */
+        .btn-submit:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="contact">
+        <form class="contact-form">
+            <h2>Hubungi Saya</h2>
+            
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" placeholder="Masukkan nama...">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Masukkan email...">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" rows="4" placeholder="Tulis pesan..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+</body>
+</html>
