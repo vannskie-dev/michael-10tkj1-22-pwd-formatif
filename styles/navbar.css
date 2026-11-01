@@ -1,0 +1,80 @@
+/* 2. body (Tag): margin 0 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 3. #main-header (ID): latar gelap */
+#main-header {
+    background-color: #1e293b;
+}
+
+/* 4. .navbar (Class): display flex, logo di kiri dan menu di kanan */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* 5. .logo (Class): tulisan terang, ukuran 22px, dan tebal */
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* 6. .nav-menu (Class): display flex, jarak antar menu (gap) 24px, margin & padding 0 */
+.nav-menu {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 7. .nav-menu > li (Child Selector): tanda titik di depan menu dihilangkan */
+.nav-menu > li {
+    list-style: none;
+}
+
+/* 8. .nav-menu a (Descendant Selector): tulisan terang dan tanpa garis bawah */
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+/* 9. .nav-menu a:hover (Pseudo-class): warna tulisan berubah */
+.nav-menu a:hover {
+    color: #60a5fa;
+}
+
+/* Style tambahan untuk konten halaman (main & footer) */
+main {
+    padding: 40px 30px;
+}
+
+main h1 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 0 30px 40px;
+}
+
+footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
